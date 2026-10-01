@@ -1,0 +1,36 @@
+{
+  "schema": "incus://isolation/inventory/v1",
+  "generated_at": "2026-07-27T04:00:00.000Z",
+  "external_actions": false,
+  "environments": [
+    {
+      "id": "incus-development",
+      "label": "Incus development",
+      "connection_status": "observed",
+      "management_endpoint_exposed": false,
+      "projects": [
+        {
+          "id": "application",
+          "network_id": "application-private",
+          "profile_count": 2,
+          "instance_count": 3,
+          "public_ingress": false
+        },
+        {
+          "id": "monitoring",
+          "network_id": "monitoring-private",
+          "profile_count": 1,
+          "instance_count": 1,
+          "public_ingress": false
+        }
+      ]
+    },
+    {
+      "id": "incus-production",
+      "label": "Incus production",
+      "connection_status": "not-connected",
+      "management_endpoint_exposed": false,
+      "projects": []
+    }
+  ]
+}
